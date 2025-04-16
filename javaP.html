@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahith Guptha - Sr. Full Stack Java Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f4f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #004e92, #000428);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      animation: slideIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid #004e92;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 0.25rem 0.5rem;
+      padding: 0.4rem 0.8rem;
+      background-color: #004e92;
+      color: white;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition: transform 0.3s ease;
+    }
+
+    .skills span:hover {
+      transform: scale(1.1);
+      background-color: #0077ff;
+    }
+
+    footer {
+      background: #004e92;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-100px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .animated-section {
+      animation: slideIn 1s ease forwards;
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach((section, index) => {
+        setTimeout(() => {
+          section.style.opacity = 1;
+        }, 300 * index);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Sahith Guptha</h1>
+    <p>Sr. Full Stack Java Developer</p>
+    <div class="contact">
+      <span>📧 gupthasahith@gmail.com</span>
+      <span>📞 469-202-6530</span>
+      <span>🔗 <a href="www.linkedin.com/in/gupthasahith" style="color: white; text-decoration: underline;">LinkedIn</a></span>
+    </div>
+  </header>
+
+  <section class="section animated-section">
+    <h2>Professional Summary</h2>
+    <p>"Hi, I’m Sahith and I’m a Senior Java Developer with over 10 years of experience building solutions for big names like CVS Healthcare, Morgan Stanley, and Toyota Financial Services. I’ve got a Bachelor’s and Master’s in Computer Science from GITAM University and the University of North Texas, respectively. I love working with tools like Java, Spring Boot, and Angular to create systems that make a real difference—like improving customer experiences or streamlining operations. I’m super excited about this opportunity because I’m passionate about using tech to solve tough problems and deliver value!"</p>
+  </section>
+
+  <section class="section animated-section">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <span>Java</span><span>Spring Boot</span><span>React.js</span><span>Angular</span><span>Node.js</span><span>Kafka</span>
+      <span>AWS</span><span>Docker</span><span>Kubernetes</span><span>MongoDB</span><span>PostgreSQL</span>
+      <span>GraphQL</span><span>OAuth2</span><span>JWT</span><span>CI/CD</span><span>Terraform</span>
+    </div>
+  </section>
+
+
+
+  <section class="section animated-section">
+    <h2>Professional Experience</h2>
+    <ul>
+      <li><strong>CVS HealthCare (Nov 2022 - Present)</strong> - <b>Project Explanation:</b> Building RESTful APIs for a Pharmacy System
+        <br><b>Business Logic:</b> "At CVS Healthcare, the goal was to make prescription refills faster and easier for customers. The business wanted a system where patients could order refills online or through an app, and pharmacies could process them without delays—basically, keeping customers happy and reducing staff workload."<br>
+        <b>What I Did:</b> "I led the charge on creating RESTful APIs using Spring Boot. I designed them with OpenAPI standards so they’d be easy to maintain and scale. I used Spring Data to connect to the Oracle database and pull patient info quickly, and I built a slick React JS front-end so users could interact with it seamlessly. I also added Spring Security with LDAP to make sure only authorized people could access sensitive data."
+        <br><b>Skills Implemented:</b> "This was all about Java 8, Spring Boot, React, and SQL. I used multi-threading to handle tons of requests at once and Kafka to push updates—like refill statuses—to other systems in real time."
+        </li>
+      <li><strong>Morgan Stanley (Oct 2020 - Nov 2022)</strong> <b>Project Explanation:</b> Microservices for Wealth Management Dashboard
+        <br><b>Business Logic:</b> "At Morgan Stanley, the business needed a dashboard for clients to track their investments in real time. They wanted it fast, secure, and easy to update as markets changed—basically, helping clients feel in control of their money."
+        <br><b>What I Did:</b> "I designed a microservices setup with Spring Boot and REST APIs to pull financial data. I used Angular on the front-end to make it dynamic and user-friendly, and Hibernate to map data from the Oracle database. I also set up Jenkins and Docker for smooth deployments to AWS, keeping everything running without hiccups."
+        <br><b>Skills Implemented:</b> "I leaned on Java, Spring MVC, Angular, and AWS tools like ECS and S3. I wrote JUnit tests to catch bugs early and used Terraform to manage the cloud setup."
+        </li>
+      <li><strong>Toyota Financial Services (Nov 2019 - Sep 2020)</strong> <b>Project Explanation:</b> Loan Processing Microservices
+        <br><b>Business Logic:</b> "Toyota Financial Services wanted to speed up car loan approvals. The business logic was simple: faster approvals mean more sales, and they needed a system that could handle tons of applications without crashing."
+        <br><b>What I Did:</b>"I built RESTful microservices with Spring Boot to process loan applications. I used Java 17’s concurrency features to handle multiple requests at once, and Docker to package everything up. I deployed it to AWS ECS using Jenkins, and added Redis caching to make data retrieval lightning-fast."
+        <br><b>Skills Implemented:</b> "This was heavy on Java 17, Spring Boot, Docker, and Kubernetes. I also used Swagger to document the APIs so the team could collaborate easily."
+        </li>
+      <li><strong>Ivy Comptech (Jan 2016 - Nov 2017)</strong> <b>Project Explanation:</b> Gaming Platform APIs
+        <br><b>Business Logic:</b> "At Ivy Comptech, we worked on a gaming platform where the business wanted players to have a smooth, real-time experience—think instant leaderboard updates and no lag during bets."
+        <br><b>What I Did:</b> "I developed microservices with Spring Boot and Node.js to handle game data. I used Kafka to push real-time updates and React JS for a snappy front-end. I also worked with MongoDB to store player stats and wrote Java 8 lambda expressions to process data faster."
+        <br><b>Skills Implemented:</b> "Java 8, Spring Boot, React, and Kafka were my go-tos. I also used Jenkins and AWS EC2 to keep deployments smooth."
+        </li>
+      <li><strong>HSBC (June 2013 - Dec 2015)</strong> <b>Project Explanation:</b> Online Banking Enhancements
+        <br><b>Business Logic:</b> "At HSBC, the business wanted customers to manage their accounts online easily—like transferring money or checking balances—without calling support. It was all about convenience and cutting costs."
+        <br><b>What I Did:</b> "I built a Spring Boot web app with REST APIs to handle transactions. I used Hibernate to connect to Oracle, and added a JSP and JavaScript front-end for a clean user experience. I also implemented Spring Security to keep everything safe."
+        <br><b>Skills Implemented:</b>  "This was Java, Spring MVC, Hibernate, and some front-end work with JavaScript. I wrote complex SQL queries to pull account data fast."
+        </li>
+    </ul>
+  </section>
+  <section class="section animated-section">
+    <h2>Education</h2>
+    <ul>
+      <li>Bachelor’s in Computer Science - GITAM University, India</li>
+      <li>Masters in Computer Science - University of North Texas</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Sahith Guptha | Java Full Stack Portfolio
+  </footer>
+</body>
+
+</html>
